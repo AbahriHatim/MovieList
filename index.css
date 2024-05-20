@@ -365,6 +365,69 @@ ul {
   border: none;
   font-size: 20px;
 }
-.container3 .filmTopPick .detail .info i {
+.container3 .filmTopPick .detail .info :hover {
+  filter: drop-shadow(0px 0px 15px red);
+}
+.container3 .pop-up {
+  width: 500px;
+  height: 250px; /* Adjust height as needed */
+  display: flex inline;
+  flex-direction: column;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the pop-up exactly */
+  visibility: hidden;
+}
+
+.container3 .pop-up.display {
+  visibility: visible;
+}
+.container3 .pop-up img {
+  height: 100px;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-220%) !important;
+  transform: translateY(-100%);
+  margin-bottom: -10px;
+  margin-right: 147px;
+}
+.container3 .pop-up h1 {
+  transform: translate(-140%, -230%); /* Center the pop-up exactly */
+}
+.container3 .pop-up p {
+  transform: translate(1%, -130%); /* Center the pop-up exactly */
+}
+.container3 .pop-up .btn {
+  transform: translate(0%, -100%);
+  width: 90%;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 30px;
+}
+.container3 .pop-up .yearType {
+  transform: translate(-160%, -445%);
+}
+.container3 .pop-up .rate {
+  transform: translate(-80%, -300%);
+}
+.container3 .pop-up .rate button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.container3 .pop-up .rate button:hover {
+  background-color: #757681;
+  color: #007bff;
+  border-radius: 5px;
+}
+.container3 .pop-up .btn:hover {
+  background-color: #757681;
+  color: #007bff;
+  cursor: pointer;
 }
 /*End of Conatianer3*/

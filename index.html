@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Audiowide"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -144,11 +148,11 @@
 
     <!--Start of Container3-->
 
-    <div class="container3">
+    <div class="container3 swiper-container">
       <h1>Top Picks</h1>
       <div class="imgTopPick">
         <div class="filmTopPick">
-          <img src="image/mv-it6.jpg" alt="film6" />
+          <img src="image/mv-it6.jpg" alt="film6" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -168,7 +172,27 @@
           </div>
         </div>
         <div class="filmTopPick">
-          <img src="image/mv-it7.jpg" alt="film7" />
+          <img src="image/mv-it7.jpg" alt="film7" id="imgSwp" />
+          <div class="detail">
+            <p>
+              <i class="fa fa-star" aria-hidden="true"></i> 8.7
+              <button>
+                <i class="far fa-star"></i>
+              </button>
+            </p>
+            <a class="title" href="#"> Skyfall</a>
+
+            <button class="btn">
+              <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
+            </button>
+
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="filmTopPick">
+          <img src="image/mv-it8.jpg" alt="film8" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -182,10 +206,13 @@
             <button class="btn">
               <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
             </button>
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
         <div class="filmTopPick">
-          <img src="image/mv-it8.jpg" alt="film8" />
+          <img src="image/mv-it9.jpg" alt="film9" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -199,10 +226,14 @@
             <button class="btn">
               <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
             </button>
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
+
         <div class="filmTopPick">
-          <img src="image/mv-it9.jpg" alt="film9" />
+          <img src="image/mv-it10.jpg" alt="film10" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -216,11 +247,13 @@
             <button class="btn">
               <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
             </button>
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
-
         <div class="filmTopPick">
-          <img src="image/mv-it10.jpg" alt="film10" />
+          <img src="image/mv-it11.jpg" alt="film11" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -234,10 +267,13 @@
             <button class="btn">
               <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
             </button>
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
         <div class="filmTopPick">
-          <img src="image/mv-it11.jpg" alt="film11" />
+          <img src="image/mv-it12.jpg" alt="film12" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -251,10 +287,13 @@
             <button class="btn">
               <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
             </button>
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
         <div class="filmTopPick">
-          <img src="image/mv-it12.jpg" alt="film12" />
+          <img src="image/mv-item1.jpg" alt="film12" id="imgSwp" />
           <div class="detail">
             <p>
               <i class="fa fa-star" aria-hidden="true"></i> 8.7
@@ -268,27 +307,31 @@
             <button class="btn">
               <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
             </button>
-          </div>
-        </div>
-        <div class="filmTopPick">
-          <img src="image/mv-item1.jpg" alt="film12" />
-          <div class="detail">
-            <p>
-              <i class="fa fa-star" aria-hidden="true"></i> 8.7
-              <button>
-                <i class="far fa-star"></i>
-              </button>
-            </p>
-
-            <a class="title" href="#"> Skyfall</a>
-
-            <button class="btn">
-              <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
+            <button class="info">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
             </button>
           </div>
         </div>
       </div>
+      <div class="pop-up" id="popUp">
+        <img src="image/mv-it6.jpg" alt="" />
+        <h1>Skyfall</h1>
+        <p class="yearType">2000-Drama</p>
+        <div class="rate">
+          <i class="fa fa-star" aria-hidden="true"></i> 8.7/10
+          <button><i class="far fa-star"></i> Rate</button>
+        </div>
+        <p>
+          "Skyfall" is the 23rd James Bond film, directed by Sam Mendes. Bond
+          faces a cyberterrorist while grappling with personal demons and
+          loyalty to M.
+        </p>
+        <button class="btn">
+          <i class="fa fa-plus" aria-hidden="true"></i>Watchlist
+        </button>
+      </div>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>

@@ -169,3 +169,62 @@ imageContainers.forEach((container) => {
     overlay.classList.remove("show-overlay");
   });
 });
+// Pop-up start
+let popUpBox = document.querySelector(".pop-up");
+let btnInfos = document.querySelectorAll(".info");
+
+// Add event listeners to all buttons with class "info"
+btnInfos.forEach((btn) => {
+  btn.addEventListener("click", displayPopUp);
+});
+
+let testBtn = true;
+
+function displayPopUp() {
+  if (testBtn) {
+    popUpBox.style.visibility = "visible";
+    document.body.style.overflow = "hidden";
+    testBtn = false;
+  } else {
+    popUpBox.style.visibility = "hidden";
+    document.body.style.overflow = "auto";
+    testBtn = true;
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+  // Define your array of images
+  const arraySwip = [
+    "image/mv-item2.jpg",
+    "image/mv-item3.jpg",
+    "image/mv-item4.jpg",
+    "image/mv-item5.jpg",
+    "image/mv-item6.jpg",
+    "image/mv-item7.jpg",
+    "image/mv-item8.jpg",
+  ];
+
+  // Initialize Swiper
+  var swiper = new Swiper(".container3", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    grabCursor: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // Add event listener for slide change
+  swiper.on("slideChange", function () {
+    // Get current active slide index
+    let activeIndex = swiper.realIndex;
+    // Get the next image from arraySwip
+    let nextImage = arraySwip[(activeIndex + 1) % arraySwip.length];
+    // Update imgSwp src with the new image
+    let imgSwp = document.querySelector("#imgSwp");
+    imgSwp.src = nextImage;
+  });
+});
